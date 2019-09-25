@@ -6,6 +6,10 @@ const app = express()
 
 app.use(express.json())
 
+app.get('/', (req, res) => {
+  res.send({ message: 'Use /nameSearch endpoint'})
+})
+
 app.get('/nameSearch', (req, res) => {
   if (!req.query.firstName || !req.query.lastName) {
     return res.send({
@@ -19,5 +23,12 @@ app.get('/nameSearch', (req, res) => {
     res.send(data)
   })
 })
+
+app.get('*', (req, res) => {
+  res.send({
+    error: 'Error 404',
+    message: 'Use /nameSearch endpoint'
+  })
+});
 
 module.exports = app
