@@ -9,7 +9,7 @@ The server accepts two query parameters when making a request right on the root 
 * firstName
 * lastName
 
-To use the actual code, you'll first need to have your own Twitter Develoepr Account you can go ahead and request for access at https://developer.twitter.com
+To use the actual code, you'll first need to have your own Twitter Developer Account you can go ahead and request for access at https://developer.twitter.com
 
 Next, follow the steps shown below: 
 1. Clone this repository
